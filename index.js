@@ -233,5 +233,5 @@
     extendObject : extendObject,
     documentReady : documentReady
   };
-})();
+})()
 );
