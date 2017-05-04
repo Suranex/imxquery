@@ -1,14 +1,14 @@
 {
   "name": "imxquery",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Helper module to provide some basic convenience methods",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/AxelGueldner/imxquery.git"
+    "type": "git",
+    "url": "https://github.com/AxelGueldner/imxquery.git"
   },
   "author": "Axel Güldner <gueldner@infomax-it.de>",
   "license": "ISC"
