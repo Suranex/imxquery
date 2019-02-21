@@ -63,28 +63,28 @@
       if(scrollSteps.x < 0){
         if(currentScrollPosition.x + scrollSteps.x <= positionX){
           flags.x = true;
-        };
+        }
       }else{
         if(currentScrollPosition.x + scrollSteps.x >= positionX){
           flags.x = true;
-        };
-      };
+        }
+      }
       
       if(scrollSteps.y < 0){
         if(currentScrollPosition.y + scrollSteps.y <= positionY){
           flags.y = true;
-        };
+        }
       }else{
         if(currentScrollPosition.y + scrollSteps.y >= positionY){
           flags.y = true;
-        };
-      };
+        }
+      }
       
       if(flags.x && flags.y){
         return true;
       }else{
         return false;
-      };
+      }
     };
     
     var intervalGap = 15;
@@ -113,7 +113,7 @@
    * @param {int} positionX
    * @param {int} positionY
    * @param {int} duration
-   * @param {htmlNode} target
+   * @param {HTMLElement} target
    * @returns null
    */
   var scrollElementTo = function(positionX, positionY, duration, target){
@@ -134,28 +134,28 @@
       if(scrollSteps.x < 0){
         if(currentScrollPosition.x + scrollSteps.x <= positionX){
           flags.x = true;
-        };
+        }
       }else{
         if(currentScrollPosition.x + scrollSteps.x >= positionX){
           flags.x = true;
-        };
-      };
+        }
+      }
       
       if(scrollSteps.y < 0){
         if(currentScrollPosition.y + scrollSteps.y <= positionY){
           flags.y = true;
-        };
+        }
       }else{
         if(currentScrollPosition.y + scrollSteps.y >= positionY){
           flags.y = true;
-        };
-      };
+        }
+      }
       
       if(flags.x && flags.y){
         return true;
       }else{
         return false;
-      };
+      }
     };
     
     var intervalGap = 15;
@@ -182,7 +182,7 @@
   
   /**
    * wrapper to access html5 data set (use this for ie10 compatibility)
-   * @param {htlmnode} object
+   * @param {HTMLElement} object
    * @param {string} value
    * @returns {mixed}
    */
@@ -191,7 +191,7 @@
       return object.dataset[value];
     }else{
       return object.getAttribute('data-' + value);
-    };
+    }
   };
   
   /**
@@ -204,8 +204,8 @@
     for(var property in extensionObject){
       if(!objectForExtension.hasOwnProperty(property)){
         objectForExtension[property] = extensionObject[property];
-      };
-    };
+      }
+    }
     return objectForExtension;
   };
   
