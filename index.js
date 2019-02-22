@@ -94,17 +94,15 @@
       x : (positionX - currentScrollPosition.x) / (duration / intervalGap),
       y : (positionY - currentScrollPosition.y) / (duration / intervalGap)
     };
-
-    var travelDuration = 0;
-
+    
     var scrollInterval = setInterval(function(){
-      if(_isTargetPositionReached() || travelDuration > duration){
+
+      if(_isTargetPositionReached()){
         clearInterval(scrollInterval);
         window.scrollTo(positionX, positionY);
       }else{
         window.scrollBy(scrollSteps.x, scrollSteps.y);
       }
-      travelDuration += intervalGap;
     }, intervalGap);
   };
   
